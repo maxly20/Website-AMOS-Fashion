@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --text-color: #444;
+  --border-color: #dbdbdb;
+  --primary-color: #002878;
+  --header-height: 80px;
+}
+
+.header {
+  width: 100vw;
+  height: 50vh;
+}
+
+.navbar {
+  min-height: 10vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.navbar a {
+  font-weight: 300;
+}
+
+.navbar__left {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar__center {
+  font-size: 2rem;
+  width: 50%;
+  text-align: center;
+  letter-spacing: 16px;
+  font-weight: 400;
+}
+
+.navbar__right {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar__left li {
+  list-style: none;
+}
+
+.navbar__right li {
+  list-style: none;
+}
+
+.fas,
+.far,
+.fab {
+  cursor: pointer;
+}
+
+.header__navigation__link {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  font-size: 1rem;
+  padding: 8px 0;
+}
+
+.header___navigation___link::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 1px;
+  width: 0;
+  background-color: var(--text-color);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.header__navigation__link:hover::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--text-color);
+}
+/*# sourceMappingURL=main.css.map */
