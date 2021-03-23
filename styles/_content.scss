@@ -1,0 +1,118 @@
+//======================
+//        EASTER
+//======================
+.easter {
+  width: 90vw;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+.easter__left,
+.easter__right {
+  width: 400px;
+  min-width: 300px;
+  height: 570px;
+  min-height: 400px;
+}
+.easter__left__img,
+.easter__right__img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  p {
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 300;
+    font-size: 3rem;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.easter__left__desc,
+.easter__right__desc {
+  font-weight: 200;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+.easter__left__link,
+.easter__right__link {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+  }
+}
+
+// NEW ARRIVAL
+
+.new-arrival {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+  align-items: center;
+  justify-content: space-between;
+  h2 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    font-weight: 400;
+  }
+}
+.new-arrival__category {
+  width: 30%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    border-bottom: 1px solid black;
+    margin-bottom: 5rem;
+  }
+}
+.new-arrival__products {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.new-arrival__product {
+  height: 400px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  img {
+    height: 80%;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  img:hover {
+    transform: scale(1.05);
+  }
+  p {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}

@@ -1,7 +1,7 @@
 window.addEventListener('scroll', function () {
   let navbar = document.querySelector('.navbar');
 
-  navbar.classList.toggle('sticky', window.scrollY >= 40);
+  navbar.classList.toggle('sticky', window.scrollY >= 80);
 });
 
 // SLIDER
@@ -99,3 +99,4 @@ let responsiveSlider = function () {
 window.onload = function () {
   responsiveSlider();
 };
+
