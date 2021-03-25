@@ -129,11 +129,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 3rem;
   padding: 0 3rem;
   p {
     font-size: 1rem;
     font-weight: 300;
     letter-spacing: 0.8px;
+    text-transform: capitalize;
   }
 }
 .payment__option {
@@ -141,4 +143,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  i {
+    font-size: 2rem;
+    color: rgb(132, 132, 132);
+    margin: 0 0.3rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .footer__payment {
+    flex-direction: column;
+    min-height: 10vh;
+    margin: 1rem 0;
+  }
 }

@@ -1145,6 +1145,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 3rem;
   padding: 0 3rem;
 }
 
@@ -1152,6 +1153,7 @@ body {
   font-size: 1rem;
   font-weight: 300;
   letter-spacing: 0.8px;
+  text-transform: capitalize;
 }
 
 .payment__option {
@@ -1165,5 +1167,22 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.payment__option i {
+  font-size: 2rem;
+  color: #848484;
+  margin: 0 0.3rem;
+}
+
+@media screen and (max-width: 650px) {
+  .footer__payment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 10vh;
+    margin: 1rem 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
