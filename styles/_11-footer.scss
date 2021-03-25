@@ -16,3 +16,35 @@
   align-items: center;
   justify-content: center;
 }
+.signup__brand {
+  font-size: 2rem;
+}
+.signup__rewards {
+  font-size: 3.5rem;
+  font-family: 'Dancing Script', cursive;
+  margin: 0 1rem;
+  color: #d5b268;
+}
+.signup__text {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin-right: 1rem;
+}
+.signup__link {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  .signup {
+    flex-direction: column;
+    align-items: center;
+  }
+  .signup__text {
+    margin: 1rem 0;
+  }
+  .signup {
+    padding: 1.2rem 0;
+  }
+}
