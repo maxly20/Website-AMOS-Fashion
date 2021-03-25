@@ -448,7 +448,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 380px;
-  width: 220px;
+  width: 200px;
   min-width: 150px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -648,13 +648,13 @@ body {
 
 .slick-next,
 .slick-prev {
-  top: 70%;
+  top: 40%;
   z-index: 100;
 }
 
 .fashion {
   width: 100vw;
-  min-height: 50vh;
+  min-height: 70vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -723,7 +723,7 @@ body {
 
 .whaton {
   width: 90vw;
-  min-height: 50vh;
+  min-height: 70vh;
   margin-top: 8rem;
   background: #f6f6f6;
   display: -webkit-box;
