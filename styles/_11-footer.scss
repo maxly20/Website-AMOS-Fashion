@@ -115,3 +115,19 @@
     display: none;
   }
 }
+//=======================
+//     PAYMENT
+//=======================
+.footer__payment {
+  width: 100vw;
+  min-height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.payment__option {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
