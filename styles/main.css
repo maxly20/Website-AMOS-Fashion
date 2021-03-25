@@ -605,7 +605,7 @@ body {
 
 .products__container {
   width: 100%;
-  height: 25vh;
+  min-height: 25vh;
 }
 
 .products__card {
@@ -654,11 +654,11 @@ body {
 
 .fashion {
   width: 100vw;
-  height: 50vh;
+  min-height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 20rem;
+  margin-top: 8rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -709,9 +709,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 3rem;
 }
 
