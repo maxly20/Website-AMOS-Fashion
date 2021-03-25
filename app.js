@@ -100,3 +100,12 @@ window.onload = function () {
   responsiveSlider();
 };
 
+// SLICK
+
+$(document).ready(function () {
+  $('.products__container').slick({
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+  });
+});
