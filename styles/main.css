@@ -1053,4 +1053,13 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
+
+.connect p, .connect i {
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  font-weight: 100;
+  margin-right: 2.5rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
 /*# sourceMappingURL=main.css.map */
