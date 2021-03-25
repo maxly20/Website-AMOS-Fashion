@@ -7,6 +7,11 @@
   align-items: center;
   margin-top: 8rem;
 }
+
+//=======================
+//     SIGN UP
+//=======================
+
 .signup {
   width: 100vw;
   min-height: 15vh;
@@ -47,4 +52,16 @@
   .signup {
     padding: 1.2rem 0;
   }
+}
+//=======================
+//     CONNECT
+//=======================
+.connect {
+  width: 100vw;
+  min-height: 10vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
