@@ -7,7 +7,14 @@
         "_1-header.scss",
         "_2-easter.scss",
         "_3-arrival.scss",
-        "_footer.scss"
+        "_4-category.scss",
+        "_5-banner.scss",
+        "_6-products.scss",
+        "_7-banner.scss",
+        "_8-fashion.scss",
+        "_9-whaton.scss",
+        "_10-inspiration.scss",
+        "_11-footer.scss"
     ],
     "names": [],
     "file": "main.css"
