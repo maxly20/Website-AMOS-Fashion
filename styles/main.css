@@ -961,7 +961,7 @@ body {
 
 .footer {
   width: 100vw;
-  min-height: 50vh;
+  min-height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -976,5 +976,22 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 8rem;
+}
+
+.signup {
+  width: 100vw;
+  min-height: 15vh;
+  background: -webkit-gradient(linear, left top, right top, from(#4f5055), to(#0f1115));
+  background: linear-gradient(to right, #4f5055, #0f1115);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */

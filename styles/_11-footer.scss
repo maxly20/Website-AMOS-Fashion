@@ -1,9 +1,18 @@
 .footer {
   width: 100vw;
-  min-height: 50vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 8rem;
+}
+.signup {
+  width: 100vw;
+  min-height: 15vh;
+  background: linear-gradient(to right, #4f5055, #0f1115);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
