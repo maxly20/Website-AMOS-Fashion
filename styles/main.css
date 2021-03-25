@@ -1114,6 +1114,16 @@ body {
   letter-spacing: 0.8px;
   text-transform: capitalize;
   margin: 0.5rem 0;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.footer__main__customer p:hover,
+.footer__main__services p:hover,
+.footer__main__info p:hover,
+.footer__main__stores p:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 750px) {
@@ -1135,6 +1145,13 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 3rem;
+}
+
+.footer__payment p {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.8px;
 }
 
 .payment__option {
