@@ -298,6 +298,7 @@ body {
 .burger {
   padding-right: 2rem;
   cursor: pointer;
+  display: none;
 }
 
 .burger div {
@@ -350,6 +351,9 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+  .burger {
+    display: block;
+  }
   .navbar__left {
     display: none;
   }
