@@ -168,10 +168,10 @@
 //     SIDEBAR
 //=======================
 .sidebar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 30vw;
+  width: 100vw;
   height: 100vh;
   background-color: white;
   z-index: 1000;
@@ -179,18 +179,68 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  transform: translateX(-120%);
+  transition: all 0.5s ease-in-out;
+}
+.sidebar_active {
+  transform: translateX(0%);
 }
 .sidebar__content {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1rem;
+  padding: 1rem 3rem;
   cursor: pointer;
+
   p {
     text-transform: capitalize;
     font-size: 1.3rem;
     font-weight: 300;
     letter-spacing: 1.4px;
+  }
+}
+//=======================
+//     BURGER
+//=======================
+.burger {
+  padding-right: 2rem;
+  cursor: pointer;
+  div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+@keyframes sidebarFade {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 900px) {
+  .navbar__left {
+    display: none;
+  }
+  .navbar__right {
+    width: 30%;
+  }
+  .sidebar {
+    padding-top: 10vh;
   }
 }

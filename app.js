@@ -146,3 +146,26 @@ $(document).ready(function () {
     ],
   });
 });
+
+//====================
+//   BURGER MENU
+//====================
+const navSlide = () => {
+  const burger = document.querySelector('.burger');
+  const sidebar = document.querySelector('.sidebar');
+  const sidebarContent = document.querySelectorAll('.sidebar__content')
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('toggle');
+    sidebar.classList.toggle('sidebar_active');
+    // sidebarContent.forEach((link, index) => {
+    //   if (link.style.animation) {
+    //     link.style.animation = "";
+    //   } else {
+    //     link.style.animation = `sidebarFade 0.5s ease forwards ${
+    //       index / 15 + 0.3
+    //     }s`;
+    //   }
+    // });
+  });
+};
+navSlide();

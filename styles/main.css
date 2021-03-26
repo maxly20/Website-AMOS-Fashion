@@ -242,10 +242,10 @@ body {
 }
 
 .sidebar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 30vw;
+  width: 100vw;
   height: 100vh;
   background-color: white;
   z-index: 1000;
@@ -262,6 +262,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transform: translateX(-120%);
+          transform: translateX(-120%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.sidebar_active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 .sidebar__content {
@@ -275,7 +284,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem 1rem;
+  padding: 1rem 3rem;
   cursor: pointer;
 }
 
@@ -284,6 +293,72 @@ body {
   font-size: 1.3rem;
   font-weight: 300;
   letter-spacing: 1.4px;
+}
+
+.burger {
+  padding-right: 2rem;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@-webkit-keyframes sidebarFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes sidebarFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar__left {
+    display: none;
+  }
+  .navbar__right {
+    width: 30%;
+  }
+  .sidebar {
+    padding-top: 10vh;
+  }
 }
 
 .easter {
